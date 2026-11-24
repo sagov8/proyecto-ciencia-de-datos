@@ -7,7 +7,7 @@ Modelado predictivo del impacto del Fenómeno de El Niño en el encarecimiento a
 ¿Cómo afecta la intensidad del Fenómeno de El Niño (medida a través del índice ONI) a la tendencia y estacionalidad de los precios de los alimentos en Popayán entre 2015 y 2026?
 
 ## Preguntas Específicas e Hipótesis de Análisis (Estadística Descriptiva e Inferencial)
-Para profundizar más allá de una comparación general y validar hallazgos no obvios mediante proporciones, probabilidad empírica y pruebas de hipótesis $z$ para diferencia de proporciones ($\alpha = 0.05$), se plantean cuatro preguntas específicas:
+Para profundizar más allá de una comparación general y validar hallazgos mediante proporciones, probabilidad empírica y pruebas de hipótesis $z$ para diferencia de proporciones ($\alpha = 0.05$), se plantean cuatro preguntas específicas:
 
 1. **Umbral de intensidad de El Niño:** ¿Cualquier episodio de El Niño encarece igual los alimentos frescos en Popayán, o la probabilidad de alzas fuertes se dispara significativamente solo cuando El Niño es **Fuerte/Muy Fuerte** ($\text{ONI} \ge +1.5\,^\circ\text{C}$) frente a **Débil/Moderado** ($+0.5$ a $<+1.5\,^\circ\text{C}$)?
 2. **Efecto combinado ("doble golpe" Estacionalidad × El Niño):** ¿Cómo aumenta la probabilidad de alzas fuertes cuando El Niño coincide con los meses estacionalmente críticos de inicio de año (**Ene–Mar**) frente al resto del año (**Abr–Dic**) en comparación con meses Neutros?
