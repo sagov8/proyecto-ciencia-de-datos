@@ -15,7 +15,7 @@
 - **Volumen descargado (crudo Popayán 2013–2026):** 19,412 filas × 7 columnas (de >666,000 registros nacionales en 2013–2024 + anexos 2025–2026).
 - **Datos personales sensibles:** Ninguno (estadísticas agregadas de precios mayoristas por mercado y alimento).
 
-### Hallazgos de calidad detectados en la base cruda
+### Hallazgos de calidad detectados en la base sin procesar
 1. **Tres formatos heterogéneos de fecha:** `d/m/yyyy` (2013–2021), `mmm-yy` en español como `ene-22`, `abr-23`, `dic-24` (2022–2024) y timestamp ISO `yyyy-mm-dd HH:MM:SS` (2025–2026).
 2. **Formato de precios con separador de miles en 2022–2024:** valores como `' 1.371 '` con espacios y punto como separador de miles colombiano (requiere normalización explícita para evitar interpretarlos como decimales `1.371`).
 3. **Inconsistencias de texto y tildes:** `mercado` alterna entre `'Popayán, Plaza de Mercado del Barrio Bolívar'` y `'Popayán, Plaza de mercado del barrio Bolívar'`; `grupo` alterna entre mayúsculas sin tilde (`TUBERCULOS, RAICES Y PLATANOS`) y formato título con tildes (`Tubérculos, Raíces y Plátanos`).
