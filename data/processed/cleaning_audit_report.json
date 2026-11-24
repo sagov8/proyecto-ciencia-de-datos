@@ -1,0 +1,37 @@
+{
+  "raw_rows_total_2013_2026": 19412,
+  "raw_nulls": {
+    "fecha_raw": 0,
+    "grupo": 0,
+    "producto": 0,
+    "codigo_cpc": 15447,
+    "mercado": 0,
+    "precio_raw": 0,
+    "fuente_archivo": 0
+  },
+  "unparsed_dates": 0,
+  "unparsed_prices": 0,
+  "non_positive_prices": 0,
+  "rows_2015_2026_all_groups": 16687,
+  "duplicate_key_rows_before_agg": 0,
+  "rows_after_dedup_all_groups": 16687,
+  "extreme_error_rows_removed": 0,
+  "statistical_outliers_flagged_kept": 211,
+  "merged_date_min": "2015-01-01",
+  "merged_date_max": "2026-09-01",
+  "total_months_merged": 141,
+  "panel_all_groups_rows": 16570,
+  "panel_frescos_rows": 6575,
+  "unique_fresh_products_total": 53,
+  "core_fresh_products_ge_90pct": 44,
+  "core_products_by_group": {
+    "Frutas": 22,
+    "Verduras y Hortalizas": 15,
+    "Tubérculos, Raíces y Plátanos": 7
+  },
+  "umbral_alerta_var_mensual_p75_pct": 4.4283,
+  "alerta_encarecimiento_counts": {
+    "0": 106,
+    "1": 35
+  }
+}

@@ -1,0 +1,97 @@
+# ============================================================================
+# Python, packaging & caches
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing, linters & type checkers
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ============================================================================
+# Virtual environments & secrets
+# ============================================================================
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# ============================================================================
+# IDEs & OS files
+# ============================================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ============================================================================
+# Logs & temporary files
+# ============================================================================
+*.log
+*.tmp
+*.temp
+*.bak
+logs/
+
+# ============================================================================
+# Large temporary downloads & redundant data exports
+# (Keeps compact .parquet datasets, .json metadata, and app-required CSVs)
+# ============================================================================
+data/raw/*.xlsx
+data/raw/*.zip
+data/raw/*.csv
+data/processed/popayan_alimentos_frescos_mensual.csv
+
+# ============================================================================
+# Presentation binaries, captures, example folders & auxiliary scripts
+# ============================================================================
+docs/capturas/
+*.pptx
+~$*.pptx
+docs/*.pdf
+docs/*.docx
+src/build_slides.py
+examples/
+example/
+ejemplos/
+ejemplo/
+samples/
+scripts/
+aux_scripts/
+scratch/
+tmp/
+temp/

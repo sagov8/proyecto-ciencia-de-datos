@@ -1,0 +1,98 @@
+{
+  "dataset_id": "gkqq-k3k5",
+  "name": "Sistema de Información de Precios y Abastecimiento del Sector Agropecuario Componente de Precios Mayoristas – SIPSA - P - 2013 -2024",
+  "rowsUpdatedAt": "2026-05-21T15:03:25+00:00",
+  "fetched_at_utc": "2026-11-24T01:27:31.311763+00:00",
+  "dane_mensual_page": "https://www.dane.gov.co/index.php/estadisticas-por-tema/agropecuario/sistema-de-informacion-de-precios-sipsa/mayoristas-boletin-mensual-1",
+  "total_popayan_rows_raw": 19412,
+  "unique_markets_raw": [
+    "Popayán, Plaza de Mercado del Barrio Bolívar",
+    "Popayán, Plaza de mercado del barrio Bolívar"
+  ],
+  "unique_groups_raw": [
+    "CARNES",
+    "Carnes",
+    "FRUTAS",
+    "Frutas",
+    "GRANOS Y CEREALES",
+    "Granos y Cereales",
+    "LACTEOS Y HUEVOS",
+    "Lácteos y Huevos",
+    "PESCADOS",
+    "PROCESADOS",
+    "Pescados",
+    "Procesados",
+    "TUBERCULOS, RAICES Y PLATANOS",
+    "Tubérculos, Raíces y Plátanos",
+    "VERDURAS Y HORTALIZAS",
+    "Verduras y Hortalizas"
+  ],
+  "sources": [
+    {
+      "title": "BaseDatos-SIPSA_P-Mensual-2013_2017",
+      "url": "https://microdatos.dane.gov.co/index.php/catalog/776/download/23898",
+      "inner_file": "Mensual_2013_2017.csv",
+      "total_rows_national": 281386,
+      "popayan_rows": 6978
+    },
+    {
+      "title": "BaseDatos-SIPSA_P-Mensual-2018",
+      "url": "https://microdatos.dane.gov.co/index.php/catalog/776/download/23897",
+      "inner_file": "Mensual_2018.csv",
+      "total_rows_national": 57121,
+      "popayan_rows": 1421
+    },
+    {
+      "title": "BaseDatos-SIPSA_P-Mensual-2019",
+      "url": "https://microdatos.dane.gov.co/index.php/catalog/776/download/23896",
+      "inner_file": "Mensual_2019.csv",
+      "total_rows_national": 56626,
+      "popayan_rows": 1423
+    },
+    {
+      "title": "BaseDatos-SIPSA_P-Mensual-2020",
+      "url": "https://microdatos.dane.gov.co/index.php/catalog/776/download/23895",
+      "inner_file": "Mensual_2020.csv",
+      "total_rows_national": 55716,
+      "popayan_rows": 1416
+    },
+    {
+      "title": "BaseDatos-SIPSA_P-Mensual-2021",
+      "url": "https://microdatos.dane.gov.co/index.php/catalog/776/download/23894",
+      "inner_file": "Mensual_2021.csv",
+      "total_rows_national": 54528,
+      "popayan_rows": 1404
+    },
+    {
+      "title": "BaseDatos-SIPSA_P-Mensual-2022",
+      "url": "https://microdatos.dane.gov.co/index.php/catalog/776/download/23893",
+      "inner_file": "mensual 22.csv",
+      "total_rows_national": 53647,
+      "popayan_rows": 1404
+    },
+    {
+      "title": "BaseDatos-SIPSA_P-Mensual-2023",
+      "url": "https://microdatos.dane.gov.co/index.php/catalog/776/download/23892",
+      "inner_file": "mensual 23.csv",
+      "total_rows_national": 53807,
+      "popayan_rows": 1401
+    },
+    {
+      "title": "BaseDatos-SIPSA_P-Mensual-2024",
+      "url": "https://microdatos.dane.gov.co/index.php/catalog/776/download/23891",
+      "inner_file": "mensual 24.csv",
+      "total_rows_national": 54042,
+      "popayan_rows": 1398
+    },
+    {
+      "title": "DANE-SerieHistoricaMayorista-2025",
+      "url": "https://www.dane.gov.co/files/operaciones/SIPSA/anex-SIPSA-SerieHistoricaMayorista-2025.xlsx",
+      "popayan_rows": 1399
+    },
+    {
+      "title": "DANE-SerieHistoricaMayorista-2026",
+      "url": "https://www.dane.gov.co/files/operaciones/SIPSA/anex-SIPSA-SerieHistoricaMayorista-2026.xlsx",
+      "popayan_rows": 1168
+    }
+  ]
+}

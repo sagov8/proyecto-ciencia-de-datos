@@ -1,0 +1,188 @@
+{
+  "split_date": "2024-07-01",
+  "train_range": [
+    "2015-05-01",
+    "2024-06-01"
+  ],
+  "test_range": [
+    "2024-07-01",
+    "2026-09-01"
+  ],
+  "train_rows": 110,
+  "test_rows": 27,
+  "feature_cols": [
+    "oni",
+    "oni_abs",
+    "oni_sq",
+    "oni_lag_1",
+    "oni_lag_2",
+    "oni_lag_3",
+    "oni_lag_6",
+    "oni_abs_lag_1",
+    "oni_abs_lag_2",
+    "oni_abs_lag_3",
+    "oni_ma_3",
+    "oni_diff_1",
+    "oni_diff_3",
+    "mes_sin",
+    "mes_cos",
+    "var_mensual_lag_1",
+    "var_mensual_lag_2",
+    "var_mensual_lag_3"
+  ],
+  "umbral_alerta_train_p75_pct": 4.6527,
+  "test_positive_alerts": 6,
+  "regression": {
+    "best_model": "Ridge (L2)",
+    "models": {
+      "Baseline Estacional": {
+        "test_mae": 3.152,
+        "test_rmse": 3.877,
+        "test_r2": -0.198,
+        "test_sign_acc_pct": 66.7
+      },
+      "Ridge (L2)": {
+        "cv_mae": 4.604,
+        "cv_rmse": 6.534,
+        "test_mae": 2.805,
+        "test_rmse": 3.674,
+        "test_r2": -0.076,
+        "test_sign_acc_pct": 66.7
+      },
+      "RandomForestRegressor": {
+        "cv_mae": 4.229,
+        "cv_rmse": 6.126,
+        "test_mae": 2.99,
+        "test_rmse": 3.707,
+        "test_r2": -0.096,
+        "test_sign_acc_pct": 55.6
+      },
+      "HistGradientBoosting": {
+        "cv_mae": 4.616,
+        "cv_rmse": 6.437,
+        "test_mae": 3.042,
+        "test_rmse": 4.05,
+        "test_r2": -0.308,
+        "test_sign_acc_pct": 70.4
+      }
+    }
+  },
+  "classification": {
+    "best_model": "RandomForestClassifier",
+    "models": {
+      "LogisticRegression": {
+        "test_f1": 0.462,
+        "test_precision": 0.429,
+        "test_recall": 0.5,
+        "test_accuracy": 0.741,
+        "test_roc_auc": 0.698,
+        "confusion_matrix": [
+          [
+            17,
+            4
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "RandomForestClassifier": {
+        "test_f1": 0.444,
+        "test_precision": 0.667,
+        "test_recall": 0.333,
+        "test_accuracy": 0.815,
+        "test_roc_auc": 0.746,
+        "confusion_matrix": [
+          [
+            20,
+            1
+          ],
+          [
+            4,
+            2
+          ]
+        ]
+      }
+    }
+  },
+  "feature_importances_rf": [
+    {
+      "feature": "oni_lag_3",
+      "importance": 0.2511
+    },
+    {
+      "feature": "oni_abs_lag_2",
+      "importance": 0.0853
+    },
+    {
+      "feature": "oni_lag_6",
+      "importance": 0.0849
+    },
+    {
+      "feature": "var_mensual_lag_3",
+      "importance": 0.0815
+    },
+    {
+      "feature": "oni_diff_3",
+      "importance": 0.0732
+    },
+    {
+      "feature": "var_mensual_lag_1",
+      "importance": 0.072
+    },
+    {
+      "feature": "mes_sin",
+      "importance": 0.0572
+    },
+    {
+      "feature": "mes_cos",
+      "importance": 0.0504
+    },
+    {
+      "feature": "var_mensual_lag_2",
+      "importance": 0.046
+    },
+    {
+      "feature": "oni_abs_lag_3",
+      "importance": 0.0364
+    },
+    {
+      "feature": "oni_abs_lag_1",
+      "importance": 0.0316
+    },
+    {
+      "feature": "oni_lag_2",
+      "importance": 0.0264
+    },
+    {
+      "feature": "oni",
+      "importance": 0.0259
+    },
+    {
+      "feature": "oni_ma_3",
+      "importance": 0.024
+    },
+    {
+      "feature": "oni_diff_1",
+      "importance": 0.0209
+    },
+    {
+      "feature": "oni_sq",
+      "importance": 0.0132
+    },
+    {
+      "feature": "oni_lag_1",
+      "importance": 0.0109
+    },
+    {
+      "feature": "oni_abs",
+      "importance": 0.0092
+    }
+  ],
+  "limitations": [
+    "Las predicciones representan estimaciones estadísticas condicionadas al índice ONI y la estacionalidad, no certezas determinísticas.",
+    "El modelo no incorpora choques exógenos no climáticos relevantes en el Cauca (bloqueos en la Vía Panamericana, precio del diésel/fletes, fertilizantes, TRM o inflación general).",
+    "El tamaño muestral mensual (137 meses útiles) limita la complejidad de modelos profundos y exige validación continua conforme el DANE publique nuevos meses."
+  ]
+}
